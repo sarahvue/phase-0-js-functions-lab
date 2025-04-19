@@ -26,9 +26,9 @@ function isPalindrome(word) {
 }
 
 function calculateDiscountedPrice(originalPrice, discountPercentage) {
-    let discount = discountPercentage * originalPrice;
-    let newPrice = originalPrice - discount;
-    return newPrice;
+  let discount = (discountPercentage / 100) * originalPrice;
+  let newPrice = originalPrice - discount;
+  return newPrice;
 }
 
 // This is required for the test to function properly
